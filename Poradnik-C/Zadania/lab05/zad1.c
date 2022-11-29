@@ -10,7 +10,7 @@ int main()
 
 	int i = 0;
 
-	while (i<number)
+	while (i < number)
 	{
 		printf("%i ", i);
 		i += 2;
