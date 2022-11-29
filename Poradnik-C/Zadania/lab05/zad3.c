@@ -4,6 +4,7 @@
 int main()
 {
 	int N = 0;
+	int wynik = 0;
 
 	printf("Wpisz liczbe N\n");
 	scanf("%i", &N);
@@ -16,6 +17,7 @@ int main()
 
 		while (j <= N)
 		{
+			wynik = i * j;
 			printf("%i * %i = %i\n", i, j, i * j);
 			j++;
 		}

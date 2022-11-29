@@ -11,22 +11,22 @@ int main()
 	printf("Wpisz liczbe M\n");
 	scanf("%i", &M);
 
-	int number = M;
-	int sum = 0;
+	int liczba = M;
+	int suma = 0;
 	int i = 0;
-
-	if (number % 2 == 0)
-		number++;
 
 	while (i < N)
 	{
-		sum += number;
-		number += 2;
+		if (liczba % 2 == 1)
+		{
+			suma += liczba;
+			i++;
+		}
 
-		i++;
+		liczba++;
 	}
 
-	printf("%i", sum);
+	printf("%i", suma);
 
 	return 0;
 }

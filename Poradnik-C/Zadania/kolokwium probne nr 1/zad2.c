@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int Check(int a, int b, int c)
+int Sprawdz(int a, int b, int c)
 {
 	int a2 = a * a;
 	int b2 = b * b;
@@ -23,10 +23,10 @@ int main()
 	printf("Wpisz dlugosc c: ");
 	scanf("%i", &c);
 
-	if (Check(a, b, c))
-		printf("Z podanych dlugosci %i, %i i %i mozna zbudowac trojkat prostokatny", a, b, c);
+	if (Sprawdz(a, b, c))
+		printf("Z podanych dlugosci a, b i c mozna zbudowac trojkat prostokatny");
 	else							
-		printf("Z podanych dlugosci %i, %i i %i nie mozna zbudowac trojkata prostokatnego", a, b, c);
+		printf("Z podanych dlugosci a, b i c nie mozna zbudowac trojkata prostokatnego");
 
 	return 0;
 }

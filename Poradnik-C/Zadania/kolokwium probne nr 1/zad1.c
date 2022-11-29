@@ -1,10 +1,13 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-void Convert(int H)
+void Konwertuj(int H)
 {
-	printf("%i godzin to %i minut\n", H, H * 60);
-	printf("%i godzin to %i sekund", H, H * 3600);
+	int minut = H * 60;
+	int sekund = H * 3600;
+
+	printf("%i godzin to %i minut\n", H, minut);
+	printf("%i godzin to %i sekund", H, sekund);
 }
 
 int main()
@@ -14,7 +17,7 @@ int main()
 	printf("Wpisz liczbe godzin: ");
 	scanf("%i", &H);
 
-	Convert(H);
+	Konwertuj(H);
 
 	return 0;
 }

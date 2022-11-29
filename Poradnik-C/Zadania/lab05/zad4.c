@@ -7,9 +7,15 @@ int main()
 
 	int i = 0;
 
+	int kwadrat = 0;
+	int szescian = 0;
+
 	while (i < 10)
 	{
-		printf("Liczba: %i\nKwadrat: %i\nSzescian: %i\n\n", N, N * N, N * N * N);
+		kwadrat = N * N;
+		szescian = N * N * N;
+
+		printf("Liczba: %i\nKwadrat: %i\nSzescian: %i\n\n", N, kwadrat,szescian);
 		N++;
 
 		i++;

@@ -1,47 +1,41 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-void Display(int* numbers)
+void Policz(int* liczby)
 {
-	int count = 0;
-	int sum = 0;
+	int ilosc = 0;
+	int suma = 0;
 
-	for (int i = 0; i < 4; i++)
+	printf("%i %i %i\n", liczby[0], liczby[1], liczby[2]);
+	printf("%i %i %i\n", liczby[3], liczby[4], liczby[5]);
+	printf("%i %i %i\n", liczby[6], liczby[7], liczby[8]);
+	printf("%i %i %i\n", liczby[9], liczby[10], liczby[11]);
+
+	for (int i = 0; i < 12; i++)
 	{
-		for (int j = 0; j < 3; j++)
+		if (liczby[i] % 2 == 0)
 		{
-			int index = i * 3 + j;
-
-			printf("%i ", numbers[index]);
-
-			if (numbers[index] % 2 == 0)
-			{
-				sum += numbers[index];
-				count++;
-			}
+			ilosc++;
+			suma += liczby[i];
 		}
-
-		printf("\n");
 	}
-	
-	printf("\n");
 
-	printf("Wprowadzono %i liczb parzystych\n", count);
-	printf("Suma liczb parzystych wynosi: %i", sum);
+	printf("Jest %i liczb parzystych\n", ilosc);
+	printf("Suma liczb parzystych wynosi: %i", suma);
 }
 
 int main()
 {
-	int numbers[12];
+	int liczby[12];
 
 	printf("Wprowadz 12 liczb\n");
 
 	for (int i = 0; i < 12; i++)
-		scanf("%i", &numbers[i]);
+		scanf("%i", &liczby[i]);
 
 	printf("\n");
 
-	Display(numbers);
+	Policz(liczby);
 
 	return 0;
 }

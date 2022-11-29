@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-void Display(int w, int h)
+void Wyswietl(int w, int h)
 {
 	for (int i = 0; i < h; i++)
 	{
@@ -22,9 +22,7 @@ int main()
 	printf("Wpisz wysokosc: ");
 	scanf("%i", &h);
 
-	printf("\n");
-
-	Display(w, h);
+	Wyswietl(w, h);
 
 	return 0;
 }

@@ -11,7 +11,10 @@ int main()
 	for (int i = 1; i <= N; i++)
 	{
 		for (int j = 1; j <= N; j++)
-			printf("%i * %i = %i\n", i, j, i * j);
+		{
+			int wynik = i * j;
+			printf("%i * %i = %i\n", i, j, wynik);
+		}
 
 		printf("\n");
 	}

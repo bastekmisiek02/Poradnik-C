@@ -11,18 +11,20 @@ int main()
 	printf("Wpisz liczbe M\n");
 	scanf("%i", &M);
 
-	int sum = 0;
+	int suma = 0;
 
-	if (M % 2 == 0)
-		M++;
-
-	for (int i = 0; i < N; i++)
+	for (int i = 0; i < N;)
 	{
-		sum += M;
-		M += 2;
+		if (M % 2 == 1)
+		{
+			suma += M;
+			i++;
+		}
+
+		M++;
 	}
 
-	printf("%i", sum);
+	printf("%i", suma);
 
 	return 0;
 }
